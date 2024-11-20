@@ -150,6 +150,9 @@ function agregarProdcarrito(nombre, precio, imgsrc) {
     prod.getElementsByClassName('boton-eliminar')[0].addEventListener('click', eliminarProducto);
     prod.getElementsByClassName('restar-can')[0].addEventListener('click', restarCantidad);
     prod.getElementsByClassName('sumar-can')[0].addEventListener('click', sumarCantidad);
+
+     // Actualizar total del carrito
+        actualizarTotal();
 }
 
 // funcion boton pagar
