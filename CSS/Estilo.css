@@ -1,0 +1,496 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*tipo de tipo grafia*/
+}
+
+.Menu {
+    z-index: 10;
+    /*Colocamos esta propiedad para que no alla conflictos con el fondo de mayor a menor inportancia*/
+    text-align: center;
+    /*ajusta los items de adentro en el centro*/
+    background-color: black;
+    /*color del menu*/
+    padding: 20px;
+    /*Tamaño del menu*/
+    color: #Ebd894;
+    /*Color de las letras*/
+}
+
+.titulo {
+    position: absolute;
+    /*Para poder ajustarlo en el menu desplegable*/
+    width: 5%;
+    /*Tamoño que ocupa el logo*/
+    height: 10px;
+    /*Tamaño que ocupa verticalmente*/
+
+}
+
+input {
+    text-align: center;
+    /*aline todo en centro*/
+    align-items: center;
+    /*alinea los iconos donde yo quiero*/
+    width: 87%;
+    /*Tamoño que ocupa*/
+    position: relative;
+    /*para ponerlo encima del menu sin taparlo*/
+    margin-top: 12px;
+    /*centramos*/
+    border-radius: 20px;
+    /*lo de coramos*/
+    background-color: transparent;
+    /*quitamos el fondo*/
+    border: 2px solid white;
+    /*borde del input*/
+    padding: 8px;
+    /* Espaciado interno */
+    color: white;
+    /*color del texto*/
+}
+
+.tamaño {
+    width: 0.5px;
+    /*tamoño de los ul del menu los puedo cambiar al mi antojo*/
+}
+
+.Menu1 ul {
+    z-index: 10;
+    /*Colocamos esta propiedad para que no alla conflictos con el fondo de mayor a menor inportancia*/
+    position: relative;
+    /*se coloca para el submenu*/
+    display: flex;
+    /*Alinea los elementos de manera sencilla y eficiente*/
+    justify-content: center;
+    /*Alineamos todo al centro*/
+    padding: 0;
+    /*Quitamos el padding*/
+    margin: 0;
+    /*Quitamos el margin*/
+    list-style: none;
+    /*Quitamos los puntos de la lista*/
+}
+
+.Menu1 li {
+    position: relative;
+    /*Comenzamos con el submenu*/
+    z-index: 10;
+    /*Colocamos esta propiedad para que no alla conflictos con el fondo de mayor a menor inportancia*/
+    flex-grow: 1;
+    /*Para aumentar el tamaño del menu*/
+}
+
+.Menu1 a {
+    display: block;
+    /*Para que se adapte de tamaño*/
+    padding: 1em;
+    /*Ajuste del padding*/
+    background-color: black;
+    /*Color del las entidades*/
+    text-decoration: none;
+    /*Quitar la decoracion y dubrrayado*/
+    color: #Ebd894;
+    /*Color de las letras*/
+    transition: background-color 0.5s;
+    /*Transicion suave para el hover*/
+    z-index: 10;
+    /*Colocamos esta propiedad para que no alla conflictos con el fondo de mayor a menor inportancia*/
+}
+
+.Menu1 a:hover {
+    background-color: white;
+    /*Color cuando pasamos el cursor por encima*/
+}
+
+.Menu1 ul li {
+    position: relative;
+    /*Hace que el submenu se despliegue*/
+    transition: 2s;
+    /*Le agregue una animacion cada que se recarga la pagina */
+}
+
+.Menu1 ul li ul {
+    z-index: 20;
+    /*Colocamos esta propiedad para que no alla conflictos con el fondo de mayor a menor inportancia*/
+    display: none;
+    /*Para que se puedan mover libremente*/
+    position: absolute;
+    /*Posicion del submenu*/
+    top: 100%;
+    /*Muestra el Submenu debajo del elemnto padre*/
+    left: 0;
+    /*Quitamos toda direccion de la izquierda*/
+    padding: 0;
+    /*Elimina padding del submenu*/
+    margin: 0;
+    /*Quitamos margin*/
+    list-style: none;
+    /*Quitamos los puntos de la lista*/
+    background-color: white;
+    /*Color de fondo del submenu*/
+}
+
+.Menu1 ul li:hover ul {
+    display: block;
+    /*Muestra el submenu al pasar el mouse*/
+}
+
+.Menu1 ul li ul li a {
+    padding: 1em;
+    /*Ajsuta el padding para los elementos del submenu */
+}
+
+.Caja_Contenido {
+    display: flex;
+    /*Se coloca para las columnas (No se necesito lo deje)*/
+    position: relative;
+    /*Lo colocamos para el fondo */
+    z-index: 1;
+    /*Colocamos esta propiedad para que no alla conflictos con el fondo de mayor a menor inportancia*/
+}
+
+.Caja_Blanco {
+    color: #Ebd894;
+    /*Tipo de colo que queremos que se vea*/
+    display: flex;
+    /*Para las columnas (Si se utilizo)*/
+    align-items: center;
+    /*Alinee todo al centro*/
+    justify-content: center;
+    /*Porci las moscas tambien alinee todo*/
+    z-index: 1;
+    /*Colocamos esta propiedad para que no alla conflictos con el fondo de mayor a menor inportancia*/
+    width: 100%;
+    /*Agregamos para que ocupe le 100% de todo */
+}
+
+.columna3 {
+    position: relative;
+    /*Para que se superponga encima del fondo*/
+}
+
+.negra {
+    width: 30vw;
+    /*Medida para que se adapte al cambio de tamaño*/
+    position: absolute;
+    /*Para que se superponga encima del fondo*/
+    top: 30%;
+    /*Centramos horizontalmente*/
+    left: 57%;
+    /*Centramos verticalmente*/
+}
+
+.blanca {
+    width: 30vw;
+    /*Medida para que se adapte al cambio de tamaño*/
+    position: absolute;
+    /*Para que se superponga encima del fondo*/
+    left: 69%;
+    /*Centramos horizontalmente*/
+    top: 10%;
+    /*Centramos verticalmente*/
+}
+
+.gorra {
+    width: 30vw;
+    /*Medida para que se adapte al cambio de tamaño*/
+    position: absolute;
+    /*Para que se superponga encima del fondo*/
+    top: 10%;
+    /*Centramos horizontalmente*/
+    left: 55%;
+    /*Centramos verticalmente*/
+
+}
+
+h1 {
+    position: absolute;
+    /*Ponemos por encima el fondo*/
+    top: 40%;
+    /* Ajusta la posición vertical (puedes cambiar el valor si es necesario) */
+    left: 15%;
+    /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%);
+    /* Esto centra el texto exactamente en el medio de la imagen */
+    color: #Ebd894;
+    /* Color del texto */
+    font-size: 4vw;
+    /* Tamaño del texto */
+    font-weight: system-ui;
+    /* Estilo del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra del texto para mejorar la visibilidad */
+}
+
+.texto {
+    position: absolute;
+    /*Lo colocamos por ensima del fondo*/
+    top: 50%;
+    /*Centramos*/
+    left: 10%;
+    /*sentramos*/
+    font-size: 2vw;
+    /*Utilizamos vw para que se adapte a cualquier cambie de tamaño */
+    color: rgb(255, 255, 255);
+    /*Color de texto*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /*Ponemos sombra para que se destaque del fondo*/
+}
+
+.fondo {
+
+    width: 100%;
+    /*Colocamos el ancho total de la imagen*/
+    height: 83vh;
+    /*Colocamos el alto de la imagen utiliza vh porque no se adaptaba con px ni con %*/
+    display: block;
+    /*Colocamos esta Propiedad para que el tamaño de la imagen se adapte */
+}
+
+hr {
+    width: 80%;
+    /*Definimos cuanto tamaño va a ocupar */
+    border: 1px solid #Ebd894;
+    /*Colocamos el color deseado*/
+    position: relative;
+    /*Ponemos esta propiedad para que el div conserve su tamaño*/
+}
+
+.iconos {
+    color: white;
+    /*Colocamos el color al icono*/
+    position: absolute;
+    /*Lo ponemos por encima del input*/
+    top: 40%;
+    /*Centramos desde arriba osea lo bajamos*/
+    left: 6%;
+    /*Movemos a la derecha*/
+}
+
+.iconos1 {
+    color: white;
+    /*Ponemos color al icono*/
+    position: absolute;
+    /*Ponemos por encima del input*/
+    top: 40%;
+    /*centramos desde arriba*/
+    left: 87%;
+    /*movemos a la derecha*/
+}
+
+.columna1 {
+    padding-left: 5%;
+    /*Movemos la columna a la derecha*/
+}
+
+.columna2 {
+    width: 100%;
+    /*Tamaño de la columna*/
+}
+
+/* Catalogo */
+.titulo-catalogo {
+    text-align: center;
+    color: #Ebd894;
+    background-color: black;
+    padding: 30px;
+}
+
+/* Estilos contenedor de productos */
+.contenedor {
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+}
+
+.contenedor .contenedor-productos {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+
+/* Estilos para cada producto dentro del contenedor */
+.contenedor .contenedor-productos .producto {
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+
+/* Efectos al pasar el mouse sobre cada producto */
+.contenedor-productos .producto:hover {
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+
+/* Estilos para las imágenes dentro de cada producto */
+.contenedor-productos .producto img {
+    max-width: 100%;
+}
+
+/* Estilo para nombres de  los productos */
+.contenedor-productos .producto .nombre-gorra {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo para el precio de los productos */
+.contenedor-productos .producto .precio {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Estilo el boton de agregar al carrito */
+.contenedor-productos .producto .boton-carrito {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Estilo para el carrito */
+.carrito {
+    background-color: black;
+    border: 3px solid #666;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+}
+
+/* Estilo encabezado carrito */
+.carrito .header-carrito {
+    background-color: #Ebd894;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo productos en el carrito */
+
+/* Estilo de los productos dentro del carrito */
+.carrito .car-prod {
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #Ebd894;
+    padding: 20px;
+}
+
+/* Estilo nombre productos en el carrito */
+
+/* Estilo para el título de los productos dentro del carrito */
+.carrito .car-prod .car-prod-titulo {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Estilo para el selector de cantidad de productos dentro del carrito */
+.carrito .car-prod .selector-cantidad {
+    display: inline-block;
+}
+
+/* Estilo para la cantidad de productos dentro del carrito */
+.carrito .car-prod .carProdCantidad {
+    border: none;
+    background: transparent;
+    display: inline-block;
+    width: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Estilo para los íconos del selector de cantidad */
+.carrito .car-prod .selector-cantidad i {
+    font-size: 15px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #Ebd894;
+    cursor: pointer;
+}
+
+
+/* Estilo para el precio de los productos dentro del carrito */
+.carrito .car-prod .carrito-prod-precio {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin: 8px;
+}
+
+/* Estilo para boton eliminar del carrito */
+.carrito .car-prod .boton-eliminar {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #Ebd894;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #Ebd894;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+.carrito .car-prod .boton-eliminar i{
+    pointer-events: none;
+}
+ /* Estilo para el total del carrito */
+.car-total {
+    background-color: #Ebd894;
+    padding: 30px;
+    color: black;
+}
+.car-total .fila {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo boton pagar */
+.car-total .boton-pagar {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: #Ebd894;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+.car-total .boton-pagar:hover {
+    scale: 1.1;
+}
+
