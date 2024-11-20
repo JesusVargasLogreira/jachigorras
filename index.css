@@ -76,7 +76,7 @@ input {
     /*Comenzamos con el submenu*/
     z-index: 10;
     /*Colocamos esta propiedad para que no alla conflictos con el fondo de mayor a menor inportancia*/
-    flex-grow: 1;
+    flex-grow:1;
     /*Para aumentar el tamaño del menu*/
 }
 
