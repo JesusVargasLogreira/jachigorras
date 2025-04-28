@@ -1,0 +1,97 @@
+* { 
+    font-family: roboto, sans-serif;
+}
+body { /* Cambiar la imagen de fondo */
+    margin: 0;
+}
+main { /*Conenedor principal */
+    background: #F3EEEA;
+    display: flex;
+    flex-direction: column; /* Cambiar a columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    justify-content: center; /* Centrar los elementos verticalmente */
+    height: 80vh; /* Asegurar que ocupe toda la altura de la pantalla */
+    margin: 0; /* Eliminar márgenes */
+    border-radius: 90px;
+} 
+section { /*Contenedores principales: login y register */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 380px;
+    max-height: 670px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+form { /*Formulario de login y register */
+    display: flex;
+    flex-direction: column; /* Mostrar los elementos en columna */
+    align-items: center;
+    gap: 15px; /* Espaciado entre los elementos */
+    width: 100%; /* Asegurar que el formulario ocupe todo el ancho disponible */
+}
+
+input { /*Inputs de login y register */
+    text-align: center;
+    background: #EBE3D5;
+    width: 100%; /* Asegurar que los inputs ocupen todo el ancho del formulario */
+    max-width: 300px; /* Limitar el ancho máximo */
+    height: 30px; /* Cambiar altura de los inputs */
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #EBE3D5;
+    border-radius: 30px;
+}
+button { /*Boton de login y register */
+    width: 100%; /* Asegurar que los botones ocupen todo el ancho del formulario */
+    max-width: 300px; /* Limitar el ancho máximo */
+    height: 45px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #776B5D;
+    color: white;
+    font-weight: bold;
+} 
+.container_log {
+    visibility: visible;
+}
+.container_register {
+    visibility: hidden;
+}
+
+.container_log, .container_register { /* posiciona contenedores de log y register en el mismo lugar */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 90%;  
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar los textos y enlaces */
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+a {
+    color: #776B5D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+input:focus {
+    border-color: #b69f87; /* Cambia el color del borde al hacer clic */
+    outline: none; /* Opcional: elimina el contorno predeterminado */
+}
