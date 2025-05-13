@@ -161,26 +161,6 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 <footer>
-    <!-- Columna 3: Contacto -->
-    <div class="footer-column">
-    <h3>Contacto</h3>
-    <ul>
-        <li>300 507 10 00</li>
-        <li>PBX: 01 8000 41 37 57</li>
-    </ul>
-    </div>
-
-    <!-- Logotipo y redes sociales -->
-    <div class="footer-logo-socials">
-    <h2>JACHIGORRAS</h2>
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        </div>
-    </div>
-</div>
+  
 </footer>
 </html>
