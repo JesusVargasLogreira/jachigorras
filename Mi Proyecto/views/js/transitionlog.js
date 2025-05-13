@@ -19,13 +19,14 @@ showLogin.addEventListener('click', e => {
     showLogin.parentElement.style.display = 'none';
 });
 
+// ...código existente...
 registerForm.addEventListener('submit', e => {
     e.preventDefault();
     const name = document.getElementById('reg-name').value;
     const email = document.getElementById('reg-email').value;
     const edad = document.getElementById('reg-edad').value;
     localStorage.setItem('user', JSON.stringify({ name, email , edad }));
-    window.location.href = '/Mi Proyecto/views/index.html';
+    window.location.href = '/Lunes%20jachigorras/jachigorras/Mi%20Proyecto/views/php/indexphp/index.php';
 });
 
 loginForm.addEventListener('submit', e => {
@@ -33,5 +34,6 @@ loginForm.addEventListener('submit', e => {
     const name = document.getElementById('login-name').value;
     const email = document.getElementById('login-email').value;
     localStorage.setItem('user', JSON.stringify({ name, email }));
-    window.location.href = '/Mi Proyecto/views/index.html';
+    window.location.href = '/Lunes%20jachigorras/jachigorras/Mi%20Proyecto/views/php/indexphp/index.php';
 });
+// ...código existente...

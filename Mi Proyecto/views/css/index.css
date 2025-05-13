@@ -19,10 +19,6 @@ body {
 .titulo {
     position: absolute;
     /*Para poder ajustarlo en el menu desplegable*/
-    width: 5%;
-    /*Tamoño que ocupa el logo*/
-    height: 10px;
-    /*Tamaño que ocupa verticalmente*/
 
 }
 

@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Las JachiGorras</title>
-    <link rel="stylesheet" href="/Mi Proyecto/views/index.css">
+    <link rel="stylesheet" href="../../css/index.css">
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Vincular JS -->
-    <script src="/Mi Proyecto/views/index.js"></script>
+    <script src="../../js/index.js"></script>
 </head>
 
 <body>
@@ -19,43 +19,15 @@
         <div class="Menu">
             <nav class="Menu1">
                 <ul>
-                    <li class="titulo"><img src="/Mi Proyecto/IMG/logo.jpg.png" alt=""></li>
+                    <li class="titulo"><img src="../../../IMG/jachi_gorras_color_4.png" alt="" width="70px" height="70px"></li>
                     <li><span class="iconos">
                             <ion-icon name="globe-outline"></ion-icon>
                         </span>
                         <input type="text" placeholder="www.jachi-gorras.com"><span class="iconos1"><ion-icon
                                 name="mic-outline"></ion-icon></span>
                     </li>
-                    <li class="tamaño"><a href="#">Gorras</a>
-                        <ul>
-                            <li><a href="#">Gorras urbanas</a></li>
-                            <li><a href="#">Gorras planas</a></li>
-                            <li><a href="#">Gorras vieja guardia</a></li>
-                            <li><a href="#">Gorras Inportadas</a></li>
-                            <li><a href="#">Gorras Normales</a></li>
-                        </ul>
-                    </li>
-                    <li class="tamaño"><a href="#">Colores</a>
-                        <ul>
-                            <li><a href="#">Blancas</a></li>
-                            <li><a href="Gorra-negra">Negras</a></li>
-                            <li><a href="#">Azules</a></li>
-                            <li><a href="#">Moradas</a></li>
-                            <li><a href="#">Rojas</a></li>
-                            <li><a href="#">Grisis</a></li>
-                        </ul>
-                    </li>
-                    <li class="tamaño"><a href="#">Estilos</a>
-                        <ul>
-                            <li><a href="#">Dos colores</a></li>
-                            <li><a href="#">Unicolor</a></li>
-                            <li><a href="#">Tres colores</a></li>
-                            <li><a href="#">cerradas</a></li>
-                            <li><a href="#">con broche</a></li>
-                            <li><a href="#">Impermeables</a></li>
-                            <li><a href="#">Gamusa</a></li>
-                        </ul>
-                    </li>
+                    <li class="tamaño"><a href="#">Tienda</a></li>
+                    <li class="tamaño"><a href="../acercaphp/Acerca.php">Acerca de nosotros</a> </li>
                     <li class="tamaño1"><a href="#"><ion-icon name="cart-outline"></ion-icon></a>
                         <ul>
                             <li>
@@ -64,14 +36,14 @@
                                     
                                     <!-- Encabezado del Carrito -->
                                     <div class="header-carrito">
-                                        <h2 class="titulo-carrito">Tu Carrito</h2>
+                                        <h2 class="titulo-carrito"><a href="">Tu carrito</a></h2>
                                     </div>
 
                                     <!-- Productos en el Carrito -->
                                     <div class="carrito-prods">
                                         <!-- Producto -->
                                         <div class="car-prod">
-                                            <img src="/Mi Proyecto/IMG/gorra.blanca-removebg-preview.png" alt="" width="80px">
+                                            <img src="../../../IMG/gorra.blanca-removebg-preview.png" alt="" width="80px">
                                             <div class="car-prod-detalles">
                                                 <span class="car-prod-titulo">Gorra Blanca</span>
                                                 <!-- Selector de Cantidad -->
@@ -90,7 +62,7 @@
 
                                         <!-- Producto 2 -->
                                         <div class="car-prod">
-                                            <img src="/Mi Proyecto/IMG/gorra.negra-removebg-preview.png" alt="" width="80px">
+                                            <img src="../../../IMG/gorra.negra-removebg-preview.png" alt="" width="80px">
                                             <div class="car-prod-detalles">
                                                 <span class="car-prod-titulo">Gorra Negra</span>
                                                 <!-- Selector de Cantidad -->
@@ -109,7 +81,7 @@
 
                                         <!-- Producto 3 -->
                                         <div class="car-prod">
-                                            <img src="/Mi Proyecto/IMG/OIP-removebg-preview.png" alt="" width="80px">
+                                            <img src="../../../IMG/OIP-removebg-preview.png" alt="" width="80px">
                                             <div class="car-prod-detalles">
                                                 <span class="car-prod-titulo">Gorra</span>
                                                 <!-- Selector de Cantidad -->
@@ -149,10 +121,10 @@
     </div>
     <div class="Caja_Contenido">
         <div class="columnas3">
-            <img class="fondo" src="/Mi Proyecto/IMG/4.png" alt="">
-            <img class="gorra" src="/Mi Proyecto/IMG/OIP-removebg-preview.png" alt="">
-            <img class="blanca" src="/Mi Proyecto/IMG/gorra.blanca-removebg-preview.png" alt="">
-            <img class="negra" src="/Mi Proyecto/IMG/gorra.negra-removebg-preview.png" alt="">
+            <img class="fondo" src="../../../IMG/4.png" alt="">
+            <img class="gorra" src="../../../IMG/OIP-removebg-preview.png" alt="">
+            <img class="blanca" src="../../../IMG/gorra.blanca-removebg-preview.png" alt="">
+            <img class="negra" src="../../../IMG/gorra.negra-removebg-preview.png" alt="">
             <h1>Descripción</h1>
             <p class="texto">Nuestras gorras podrían destacar por <br> diseños modernos y versátiles. Con <br>un gran
                 estilo, comodidad y funcionalidad.</p>
@@ -166,19 +138,19 @@
         <div class="contenedor-productos">
             <div class="producto"> <!-- Producto 1 -->
                 <span class="nombre-gorra">Gorra Blanca</span>
-                <img src="/Mi Proyecto/IMG/gorra.blanca-removebg-preview.png" class="img-item">
+                <img src="../../../IMG/gorra.blanca-removebg-preview.png" class="img-item">
                 <span class="precio">$70.000</span>
                 <button class="boton-carrito">Agregar al Carrito</button>
             </div>
             <div class="producto"> <!-- Producto 2 -->
                 <span class="nombre-gorra" id="gorras">Gorra Negra</span>
-                <img src="/Mi Proyecto/IMG/gorra.negra-removebg-preview.png" class="img-item">
+                <img src="../../../IMG/gorra.negra-removebg-preview.png" class="img-item">
                 <span class="precio">$70.000</span>
                 <button class="boton-carrito">Agregar al Carrito</button>
             </div>
             <div class="producto"> <!-- Producto 3 -->
                 <span class="nombre-gorra">Gorra</span>
-                <img src="/Mi Proyecto/IMG/OIP-removebg-preview.png" class="img-item">
+                <img src="../../../IMG/OIP-removebg-preview.png" class="img-item">
                 <span class="precio">$70.000</span>
                 <button class="boton-carrito">Agregar al Carrito</button>
             </div>

@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Iniciar Sesión / Registro</title>
-  <link rel="stylesheet" href="/Mi Proyecto/views/logpagestyles.css" />
+  <link rel="stylesheet" href="../../css/logpagestyles.css">
 </head>
 <body>
      <!-- Imagen de fondo-->
       <span>
-        <img src="/Mi Proyecto/IMG/Fondo.jpg" alt="Fondo del login" width="100%" height="800px">
+        <img src="../../../IMG/Fondo.jpg" alt="Fondo del login" width="100%" height="100%">
         
       </span>
   <main class="container_log">
-    <img src="/Mi Proyecto/IMG/logo.jpg.png" alt="logo JachiGorras" width="40%" height="100px" />
+    <img src="../../../IMG/jachi_gorras_color_4.png" alt="logo JachiGorras" width="70%" height="40%" />
 
     <!-- LOGIN -->
     <form id="login-form" class="login-form">
@@ -36,6 +36,7 @@
     
   </main>
 
-  <script src="/Mi Proyecto/views/transitionlog.js"></script>
+  <script src="../../js/transitionlog.js"></script>
+
 </body>
 </html>
