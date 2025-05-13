@@ -26,7 +26,7 @@
                         <input type="text" placeholder="www.jachi-gorras.com"><span class="iconos1"><ion-icon
                                 name="mic-outline"></ion-icon></span>
                     </li>
-                    <li class="tamaño"><a href="#">Tienda</a></li>
+                    <li class="tamaño"><a href="../tiendaphp/Tienda.php">Tienda</a></li>
                     <li class="tamaño"><a href="../acercaphp/Acerca.php">Acerca de nosotros</a> </li>
                     <li class="tamaño1"><a href="#"><ion-icon name="cart-outline"></ion-icon></a>
                         <ul>
