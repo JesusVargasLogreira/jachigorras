@@ -40,17 +40,4 @@ header {
     /*Para aumentar el tamaño del menu*/
 
 }
-.Fondo1{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-}
-.Fondo1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Hace que la imagen cubra todo el espacio sin deformarse */
-    display: block;
-}
+
