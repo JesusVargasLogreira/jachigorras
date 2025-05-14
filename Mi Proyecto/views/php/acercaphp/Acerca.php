@@ -30,15 +30,15 @@
     </header>
     <!-- Contenido de la pagina -->
     <main>
-        <figure class="Fondo1"><img src="../../../IMG/imagentelaacerca.png" alt=""></figure>
+        <figure class="Fondo1"><img src="../../../IMG/fondo-blanco-y-negro-ondulado.jpg" alt="" width="100% " height="80%"></figure>
         <figure class="Fondo2"><img src="../../../IMG/fondoacercade.png" alt=""></figure>
-        <h1>¿Quienes somos?</h1>
-        <p></p>
+        <h1 class="Quien-somos">¿Quienes somos?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat magni nam voluptatum, aspernatur nobis facere necessitatibus suscipit qui aliquid eveniet ab error modi reprehenderit excepturi vel impedit molestias amet natus.
+        </p>
 
 
     </main>
-
-    <footer>
+     <footer>
            <!-- Columna 3: Contacto -->
     <div class="footer-column">
     <h3>Contacto</h3>
@@ -61,5 +61,7 @@
      </div>
     </div>
     </footer>
+
+   
 </body>
 </html>
