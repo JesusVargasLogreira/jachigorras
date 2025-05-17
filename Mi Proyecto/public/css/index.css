@@ -551,3 +551,59 @@ footer {
   .social-icons i:hover {
     color: #00ff00; /* Cambia el color al pasar el mouse */
   }
+
+  .usuario-menu {
+    position: relative;
+}
+
+.submenu-usuario {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 10px;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.usuario-menu:hover .submenu-usuario {
+    display: block;
+}
+
+.submenu-usuario li {
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+.submenu-usuario li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-usuario li a:hover {
+    color: #007bff;
+}
+
+.usuario-nombre {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ff4444;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}

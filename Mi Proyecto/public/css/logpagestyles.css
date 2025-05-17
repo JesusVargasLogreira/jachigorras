@@ -95,3 +95,18 @@ input:focus {
     border-color: #b69f87; /* Cambia el color del borde al hacer clic */
     outline: none; /* Opcional: elimina el contorno predeterminado */
 }
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
