@@ -1,23 +1,23 @@
 <?php
-define('BASE_PATH', dirname(__DIR__));
+<?php
+require_once __DIR__ . '/config/routes.php';
+require_once __DIR__ . '/config/database.php';
 
-// Autoload básico
-spl_autoload_register(function($class) {
-    include BASE_PATH . '/' . str_replace('\\', '/', $class) . '.php';
-});
+$router = new Router();
 
-// Routing básico
-$controller = isset($_GET['c']) ? $_GET['c'] : 'home';
-$action = isset($_GET['a']) ? $_GET['a'] : 'index';
+// Rutas de autenticación
+$router->addRoute('GET', '/views/Register.php', 'UserController', 'showRegisterForm');
+$router->addRoute('POST', '/login', 'UserController', 'login');
+$router->addRoute('POST', '/register', 'UserController', 'register');
+$router->addRoute('GET', '/logout', 'UserController', 'logout');
 
-// Cargar controlador
-$controllerName = ucfirst($controller) . 'Controller';
-$controllerPath = BASE_PATH . '/controllers/' . $controllerName . '.php';
+// Rutas principales
+$router->addRoute('GET', '/', 'ProductController', 'index');
+$router->addRoute('GET', '/about', 'ProductController', 'about');
 
-if (file_exists($controllerPath)) {
-    require_once $controllerPath;
-    $controller = new $controllerName();
-    $controller->$action();
-} else {
-    echo "Controlador no encontrado";
-}
+// Rutas del carrito
+$router->addRoute('POST', '/cart/add', 'CartController', 'addToCart');
+$router->addRoute('POST', '/cart/update', 'CartController', 'updateCart');
+$router->addRoute('POST', '/cart/remove', 'CartController', 'removeFromCart');
+
+$router->handleRequest();

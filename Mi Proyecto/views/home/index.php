@@ -2,11 +2,21 @@
 <?php
 require_once __DIR__ . '/../config/routes.php';
 require_once __DIR__ . '/../controllers/ProductController.php';
-require_once __DIR__ . '/../controllers/CartController.php';
+require_once __DIR__ . '/../controllers/CarritoController.php';
 require_once __DIR__ . '/../config/database.php';
+
+//Inicializar controladores
+$database = new Database();
+$db = $database->getConnection();
+$productController = new ProductController($db);
+$cartController = new CartController($db);
 
 // Iniciar sesión para el carrito
 session_start();
+
+// Obtener productos y carrito
+$featuredProducts = $productController->getFeatured();
+$cartItems = isset($_SESSION['cart']) ? $_SESSION['cart']->getItems() : [];
 
 $router = new Router();
 
@@ -127,12 +137,8 @@ $router->handleRequest();
                                 </div>
                             </li>
                         </ul>
-                    </li>
-                </ul>
             </nav>
-        </div>
-    </div>
-    <div class="Caja_Contenido">
+        <div class="Caja_Contenido">
         <div class="columnas3">
             <img class="fondo" src="/public/img/4.png" alt="">
             <img class="gorra" src="/public/img/OIP-removebg-preview.png" alt="">

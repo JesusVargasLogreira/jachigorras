@@ -1,12 +1,12 @@
 RewriteEngine On
-RewriteBase /
+RewriteBase /jachigorras/Mi%20Proyecto/
 
-# Permitir acceso directo a archivos y directorios existentes
+# Permitir acceso directo a archivos estáticos
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Redirigir todo lo demás a index.php
-RewriteRule ^(.*)$ index.php [QSA,L]
+# Redirigir todo al index.php en public
+RewriteRule ^(.*)$ public/php/index.php [QSA,L]
 
 # Permitir acceso directo a archivos PHP en /views
 RewriteCond %{REQUEST_URI} !^/views/

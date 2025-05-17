@@ -1,4 +1,4 @@
-<?php
+
 <?php
 class Router {
     private $routes = [];
@@ -22,7 +22,7 @@ class Router {
                 return $controller->{$route['action']}();
             }
         }
-
+        
         // Si no se encuentra la ruta
         header("HTTP/1.0 404 Not Found");
         echo "Ruta no encontrada";
