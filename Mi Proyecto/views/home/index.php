@@ -1,10 +1,11 @@
-
 <?php
-require_once __DIR__ . '/../config/routes.php';
-require_once __DIR__ . '/../controllers/ProductController.php';
-require_once __DIR__ . '/../controllers/CarritoController.php';
-require_once __DIR__ . '/../config/database.php';
+<?php
+require_once __DIR__ . '/../../config/routes.php';
+require_once __DIR__ . '/../../controllers/ProductController.php';
+require_once __DIR__ . '/../../controllers/CarritoController.php';
+require_once __DIR__ . '/../../config/database.php';
 
+// ...existing code...
 //Inicializar controladores
 $database = new Database();
 $db = $database->getConnection();
